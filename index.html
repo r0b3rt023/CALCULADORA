@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Calculator App with JavaScript"/>
+    <title>CALCULATOR 3000</title>
+    <link rel="stylesheet" type="text/css" href="styles/estilos.css">
+    <link rel="icon" href="images/calculadora.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="titulo">CALCULATOR 3000</div>
+        <div class="panelPantalla">
+            <div class="panelOperacion">
+                <p id="textoOperacion">0</p>
+            </div>
+            <div class="panelResultado">
+                <p id="resultadoOperacion"></p>
+            </div>
+        </div>
+
+        <button onclick="botonClick(this.textContent)" class="boton">7</button>
+        <button onclick="botonClick(this.textContent)" class="boton">8</button>
+        <button onclick="botonClick(this.textContent)" class="boton">9</button>
+        <button onclick="botonClick(this.textContent)" class="boton botonOperaciones">+</button>
+        
+        <button onclick="botonClick(this.textContent)" class="boton">4</button>
+        <button onclick="botonClick(this.textContent)" class="boton">5</button>
+        <button onclick="botonClick(this.textContent)" class="boton">6</button>
+        <button onclick="botonClick(this.textContent)" class="boton botonOperaciones">-</button>
+        
+
+        <button onclick="botonClick(this.textContent)" class="boton">1</button>
+        <button onclick="botonClick(this.textContent)" class="boton">2</button>
+        <button onclick="botonClick(this.textContent)" class="boton">3</button>
+        <button onclick="botonClick(this.textContent)" class="boton botonOperaciones">/</button>
+        
+        <button onclick="botonClick(this.textContent)" class="boton botonSimbolo">(</button>
+        <button onclick="botonClick(this.textContent)" class="boton">0</button>
+        <button onclick="botonClick(this.textContent)" class="boton botonSimbolo">)</button>
+        <button onclick="botonClick(this.textContent)" class="boton botonOperaciones">*</button>
+
+        
+        <button onclick="botonLimpiar()" class="boton botonLimpiar">C</button>
+        <button onclick="botonClick(this.textContent)" class="boton botonSimbolo">.</button>
+        <button onclick="botonBorrar()" class="boton botonBorrar"><</button>
+
+        <button onclick="botonIgual()" class="boton botonIgual">=</button>
+    </div>
+
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
+</body>
+</html>

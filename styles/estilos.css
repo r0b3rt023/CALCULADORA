@@ -1,0 +1,130 @@
+html {
+    background-color: bisque;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    align-content: center;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 9px 9px 0px 9px #4C4C4C,
+                10px 10px 0px 10px black;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    min-height: 520px;
+}
+
+.boton {
+    background-color: #DCEAEA;
+    border: 1px solid #5F5F5F;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 1px #252525;
+}
+
+.boton:active {
+    opacity: 0.75;
+}
+
+.titulo {
+    grid-column: span 4;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panelPantalla {
+    grid-column: span 4;
+    height: 190px;
+    background-color: #EEEDED;
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 400px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Gracias Adrián Rosón*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panelOperacion {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    transform: rotateX(180deg);
+}
+
+#textoOperacion {
+    font-size: 50px;
+    font-weight: bold;  
+    letter-spacing: 8px;
+    text-align: left;
+    color: #2C2C2C;
+    white-space: nowrap;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    transform: rotateX(180deg);
+}
+
+.panelResultado {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#resultadoOperacion {
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    text-align: right;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.panelOperacion::-webkit-scrollbar, .panelResultado::-webkit-scrollbar  {
+    width: 2px;
+}
+
+.panelOperacion::-webkit-scrollbar-track, .panelResultado::-webkit-scrollbar-track {
+    background-color: #BDBDBD;
+}
+
+.panelOperacion::-webkit-scrollbar-thumb, .panelResultado::-webkit-scrollbar-thumb {
+    background-color: #B9B0A0;
+    
+}
+
+.panelOperacion::-webkit-scrollbar-thumb:hover, .panelResultado::-webkit-scrollbar-thumb:hover {
+    background-color: #CFC6B6;
+}
+
+.botonLimpiar{
+    background-color: #A44040;
+}
+
+.botonIgual {
+    background-color: #9AE1B4;
+}
+
+.botonBorrar {
+    background-color: #F5DBA4;
+}
+
+.botonOperaciones {
+    background-color: #B0DDE5;
+}
+
+.botonSimbolo {
+    background-color: #E3CEE3;
+}
